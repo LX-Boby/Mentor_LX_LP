@@ -1,0 +1,152 @@
+{% include 'header.html' %}
+
+  <main id="main">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up" data-aos-delay="200">
+            <h1>We are LearningX Mentor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
+                class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+            <img src="{{url_for('static', filename='img/image.png')}}" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg box-top">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/AKSI.png')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-2 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/LearningX-SImak.id.png')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-2 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/Logo-KodingMU.png')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-2 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/LX International Logo.png')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-2 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/SIMAK-logo.png')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-2 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/partners/kemdikbud.png')}}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cliens Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="mentors" class="mentors">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="my-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+            <div class="card rounded-4 shadow-sm">
+              <div class="mentor-course">
+                <img class="card-img-top mentor-img-course" src="{{url_for('static', filename='img/portfolio/html,css.jpg')}}">
+              </div>
+
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="label">HTML, CSS</label>
+                  <h6 class="label-secondary">Front End</h6>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="profile">
+                    <img src="{{url_for('static', filename='img/team/Amatullah Shafiyyah.png')}}" class="img-fluid" alt="">
+                  </div>
+                  <h6 class="mx-3 mentor-name">Amatullah Shaffiyah</h6>
+                </div>
+
+                <hr>
+                <h6 class="availability">Available</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+            <div class="card rounded-4 shadow-sm">
+              <div class="mentor-course">
+                <img class="card-img-top mentor-img-course" src="{{url_for('static', filename='img/portfolio/javascript.png')}}">
+              </div>
+
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="label">JavaScript</label>
+                  <h6 class="label-secondary">Back End</h6>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="profile">
+                    <img src="{{url_for('static', filename='img/team/Boby Hartanto.png')}}" class="img-fluid" alt="">
+                  </div>
+                  <h6 class="mx-3 mentor-name">Boby Hartanto</h6>
+                </div>
+
+                <hr>
+                <h6 class="availability">Available</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+            <div class="card rounded-4 shadow-sm">
+              <div class="mentor-course">
+                <img class="card-img-top mentor-img-course" src="{{url_for('static', filename='img/portfolio/laravel.png')}}">
+              </div>
+
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="label">Laravel</label>
+                  <h6 class="label-secondary">Back End</h6>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="profile">
+                    <img src="{{url_for('static', filename='img/team/Riandy Enrisa.png')}}" class="img-fluid" alt="">
+                  </div>
+                  <h6 class="mx-3 mentor-name">Riandy Enrisa</h6>
+                </div>
+
+                <hr>
+                <h6 class="availability">Available</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+{% include 'footer.html' %}
