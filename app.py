@@ -4,7 +4,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 client = MongoClient(
-    'mongodb+srv://nesa:nesasaputri@cluster0.7le98k4.mongodb.net/?retryWrites=true&w=majority')
+    'mongodb://lx-boby:bobyhard@ac-llkguct-shard-00-00.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-01.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-02.rmswowm.mongodb.net:27017/?ssl=true&replicaSet=atlas-spa6pr-shard-0&authSource=admin&retryWrites=true&w=majority')
 db = client.db_lx_pkl1
 
 

@@ -1127,7 +1127,12 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
