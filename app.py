@@ -1,11 +1,16 @@
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from pymongo import MongoClient
 
-app = Flask(__name__)
+MONGODB_URI = os.environ.get("MONGODB_URI")
+DB_NAME =  os.environ.get("DB_NAME")
 
-client = MongoClient(
-    'mongodb://lx-boby:bobyhard@ac-llkguct-shard-00-00.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-01.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-02.rmswowm.mongodb.net:27017/?ssl=true&replicaSet=atlas-spa6pr-shard-0&authSource=admin&retryWrites=true&w=majority')
-db = client.db_lx_pkl1
+client = MongoClient(MONGODB_URI)
+db = client[DB_NAME]
+
+app = Flask(__name__)
 
 
 @app.route('/')
@@ -30,7 +35,7 @@ def contact():
 
 @app.route('/auth')
 def auth():
-    return render_template('auth.html', title="User")
+    return render_template('auth.html', title="Authentication")
 
 
 @app.route('/detail/<keyword>')

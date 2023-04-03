@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Montserrat","Open Sans", "Arial";
+  font-family: "Montserrat","Open Sans","Arial";
   color: #444444;
 }
 
@@ -103,8 +103,6 @@ a:hover {
 
 #header .logo {
   font-size: 30px;
-  margin: 0;
-  padding: 0;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 2px;
@@ -116,7 +114,7 @@ a:hover {
 }
 
 #header .logo img {
-  max-height: 100px;
+  max-height: 140px;
 }
 
 /*--------------------------------------------------------------
@@ -126,7 +124,7 @@ a:hover {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+  padding: 0px;
 }
 
 .navbar ul {
@@ -146,12 +144,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 20px;
   font-size: 15px;
   font-weight: 500;
   color: #BC1E2D;
   white-space: nowrap;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .navbar a i,
@@ -171,8 +170,8 @@ a:hover {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  padding: 8px 20px;
-  margin-left: 30px;
+  padding: 8px 28px;
+  margin-left: 20px;
   border-radius: 50px;
   color: #BC1E2D;
   font-size: 14px;
@@ -373,7 +372,7 @@ a:hover {
 }
 
 #hero .container {
-  padding-top: 60px;
+  padding-top: 120px;
 }
 
 #hero h1 {
@@ -551,10 +550,10 @@ section {
 }
 
 .clients img {
-  max-width: 40%;
+  width: 50%;
   transition: all 0.4s ease-in-out;
+  padding: 16px 0px;
   display: inline-block;
-  padding: 15px 0;
   filter: grayscale(100);
 }
 
@@ -565,7 +564,7 @@ section {
 
 @media (max-width: 768px) {
   .clients img {
-    max-width: 40%;
+    max-width: 80%;
   }
 }
 
