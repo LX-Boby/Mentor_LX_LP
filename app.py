@@ -4,11 +4,12 @@ from dotenv import load_dotenv
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from pymongo import MongoClient
 
-MONGODB_URI = os.environ.get("MONGODB_URI")
-DB_NAME =  os.environ.get("DB_NAME")
+# MONGODB_URI = os.environ.get("MONGODB_URI")
+# DB_NAME =  os.environ.get("DB_NAME")
 
-client = MongoClient(MONGODB_URI)
-db = client[DB_NAME]
+client = MongoClient("mongodb://lx-boby:bobyhard@ac-llkguct-shard-00-00.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-01.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-02.rmswowm.mongodb.net:27017/?ssl=true&replicaSet=atlas-spa6pr-shard-0&authSource=admin&retryWrites=true&w=majority")
+db = client.db_lx_pkl1
+
 
 app = Flask(__name__)
 

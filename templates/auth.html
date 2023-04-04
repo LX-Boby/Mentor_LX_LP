@@ -43,94 +43,78 @@
 
 <body>
     <main>
-        <div class="box">
+        <div class="box rounded-4 bg-white">
             <div class="inner-box">
                 <div class="forms-wrap">
-                    <form action="/login" autocomplete="on" class="sign-in-form" method="post">
+                    <form action="/login" method="post" autocomplete="off" class="sign-in-form">
                         <div class="logo">
                             <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}"
-                                alt="" class="img-fluid">
-                                <h4>LearningX Mentor</h4>
+                                alt="LearningX Logo" />
                         </div>
 
-                        <div class="heading">
-                            <h2>Selamat datang ke Website LearningX Mentor!</h2>
-                            <h6>Belum punya akun?</h6>
-                            <a href="#" class="toggle">Register</a>
+                        <div class="heading my-2">
+                            <h2>Login</h2>
+                            <p>Not registered yet?&nbsp;<a href="#" class="toggle">Sign up</a></p>
                         </div>
 
-                        <div class="actual-form">
-                            <div class="input-wrap">
-                                <input type="email" name="email" id="email" class="input-field" required>
-                                <label for="email">Email</label>
+                        <div class="my-2">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
                             </div>
-                            <div class="input-wrap">
-                                <input type="password" name="password" id="password" class="input-field" required>
-                                <label for="password">Password</label>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
                             </div>
-                            <input type="submit" value="Sign In" class="sign-btn">
-                            <p class="text">
-                                Forgot Password?<br>
-                                <a href="#">Get Help</a>Sign In Here
-                            </p>
                         </div>
+
+                        <div class="d-grid my-2">
+                            <input class="btn btn-danger" type="submit" value="Login" />
+                        </div>
+
+                        <a href="#">Forgot password</a>
                     </form>
 
-                    <form action="/register" autocomplete="off" class="sign-up-form" method="post">
+                    <form action="/register" method="post" autocomplete="off" class="sign-up-form">
                         <div class="logo">
                             <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}"
-                                alt="" class="img-fluid">
-                                <h4>LearningX Mentor</h4>
+                                alt="LearningX Logo" />
                         </div>
 
-                        <div class="heading">
-                            <h2>Selamat datang ke Website LearningX Mentor!</h2>
-                            <h6>Sudah punya Akun?</h6>
-                            <a href="#" class="toggle">Login</a>
+                        <div class="heading my-2">
+                            <h2>Register</h2>
+                            <p>Already have an account?&nbsp;<a href="#" class="toggle">Sign in</a></p>
                         </div>
 
-                        <div class="actual-form">
-                            <div class="input-wrap">
-                                <input type="text" name="nama" id="nama" class="input-field" required>
-                                <label for="nama">Nama Lengkap</label>
+                        <div class="my-2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="Isi nama lengkap anda">
+                                <label for="floatingInput">Full Name</label>
                             </div>
-                            <div class="input-wrap">
-                                <input type="email" name="email" id="email" class="input-field" required>
-                                <label for="email">Email</label>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
                             </div>
-                            <div class="input-wrap">
-                                <input type="password" name="password" id="password" class="input-field" required>
-                                <label for="password">Password</label>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
                             </div>
-                            <input type="submit" value="Sign Up" class="sign-btn">
-                            <p class="text">
-                                By Signing Up, I agree to the 
-                                <a href="#">Terms and Conditions</a> and <a href="#">Privacy and Policy</a>
-                            </p>
+                        </div>
+
+                        <div class="d-grid my-2">
+                            <input class="btn btn-danger" type="submit" value="Register" />
                         </div>
                     </form>
                 </div>
 
-                <div class="carousel">
-                    <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}" class="image img-1 show img-fluid">
-                    <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}" class="image img-1 show img-fluid">
-                    <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}" class="image img-1 show img-fluid">
-                </div>
-
-                <div class="text-slider">
-                    <div class="text-wrap">
-                        <div class="text-group">
-                            <h2>Test</h2>
-                            <h2>Ez</h2>
-                            <h2>Percobaan</h2>
-                        </div>
-                    </div>
-
-                    <div class="bullets">
-                        <span class="active" data-value="1"></span>
-                        <span data-value="2"></span>
-                        <span data-value="3"></span>
-                    </div>
+                <div class="banner rounded-4">
+                    <img src="{{url_for('static', filename='img/pkl.jpeg')}}"
+                        class="img-fluid" alt="" />
                 </div>
             </div>
         </div>
