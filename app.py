@@ -1,7 +1,11 @@
-import os
+# jwt       untuk membuat JWT token
+# datetime  untuk mengatur tanggal expired token kita
+# hashlib   untuk mengenkripsi password user sebelum menyimpannya di database
+
+import os, jwt, datetime, hashlib
 from os.path import join, dirname
 from dotenv import load_dotenv
-from flask import Flask, request, render_template, redirect, url_for, jsonify
+from flask import Flask, request, render_template, redirect, url_for, jsonify, session
 from pymongo import MongoClient
 
 # MONGODB_URI = os.environ.get("MONGODB_URI")
@@ -9,6 +13,11 @@ from pymongo import MongoClient
 
 client = MongoClient("mongodb://lx-boby:bobyhard@ac-llkguct-shard-00-00.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-01.rmswowm.mongodb.net:27017,ac-llkguct-shard-00-02.rmswowm.mongodb.net:27017/?ssl=true&replicaSet=atlas-spa6pr-shard-0&authSource=admin&retryWrites=true&w=majority")
 db = client.db_lx_pkl1
+
+
+# Ini merupakan string rahasia untuk token JWT.
+# String ini disimpan ke server, agar anda bisa melakukan encode/decode dengan token ini.
+SECRET_KEY = "LX_PKL"
 
 
 app = Flask(__name__)

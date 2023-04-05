@@ -14,6 +14,15 @@ body {
   color: #444444;
 }
 
+.lx-link {
+  color: #151111;
+  transition: 0.3s;
+}
+
+.lx-link:hover {
+  color: #ed4035;
+}
+
 main {
   width: 100%;
   min-height: 100vh;
@@ -172,17 +181,18 @@ main.sign-up-mode .banner {
   width: 55%;
   left: 45%;
   top: 0;
-  background-color: #ed4035;
+  background-color: rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
+  object-fit: cover;
   transition: 0.8s ease-in-out;
 }
 
 .banner img {
-  width: max-content;
-  background-position: center;
-  background-size: cover;
+  position: absolute;
+  left: -2rem;
+  height: 100%;
 }
 
 /**
@@ -200,7 +210,7 @@ main.sign-up-mode .banner {
     transform: none;
     width: revert;
     height: revert;
-    padding: 0px 20px;
+    padding: 20px 10px;
   }
 
   .forms-wrap {
@@ -251,10 +261,6 @@ main.sign-up-mode .banner {
 
   .box {
     border-radius: 2rem;
-  }
-
-  .inner-box {
-    padding-bottom: 20px;
   }
 
   form {
