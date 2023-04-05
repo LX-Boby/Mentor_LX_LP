@@ -18,7 +18,7 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  padding: 2rem;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ main {
   position: relative;
   width: 100%;
   max-width: 1060px;
-  height: 680px;
+  height: 640px;
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
 
@@ -59,11 +59,11 @@ main {
 form {
   max-width: 360px;
   width: 100%;
-  margin: 40px auto;
+  margin: 28px auto;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   transition: opacity 0.02s 0.4s;
@@ -200,7 +200,7 @@ main.sign-up-mode .banner {
     transform: none;
     width: revert;
     height: revert;
-    padding: 2rem;
+    padding: 0px 20px;
   }
 
   .forms-wrap {
@@ -211,7 +211,7 @@ main.sign-up-mode .banner {
   form {
     margin: 0;
     max-width: revert;
-    padding: 1.5rem 2.5rem 0rem;
+    padding: 0px 20px;
     transition: transform 0.8s ease-in-out, opacity 0.45s linear;
   }
 
@@ -232,6 +232,7 @@ main.sign-up-mode .banner {
   }
 
   .banner {
+    display: none;
     position: revert;
     height: 200px;
     width: 100%;
@@ -253,14 +254,10 @@ main.sign-up-mode .banner {
   }
 
   .inner-box {
-    padding: 1rem;
-  }
-
-  .banner {
-    padding: 1.5rem 1rem;
+    padding-bottom: 20px;
   }
 
   form {
-    padding: 1rem 2rem 1.5rem;
+    padding: 0rem 2rem 0rem;
   }
 }
