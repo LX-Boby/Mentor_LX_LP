@@ -168,8 +168,8 @@ a:hover {
   font-weight: bold;
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
+.navbar .main-button,
+.navbar .main-button:focus {
   padding: 8px 28px;
   margin-left: 20px;
   border-radius: 50px;
@@ -179,8 +179,8 @@ a:hover {
   font-weight: 600;
 }
 
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
+.navbar .main-button:hover,
+.navbar .main-button:focus:hover {
   color: #fff;
   background: #BC1E2D;
 }
@@ -323,8 +323,8 @@ a:hover {
   color: #ED4035;
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
+.navbar-mobile .main-button,
+.navbar-mobile .main-button:focus {
   margin: 15px;
   color: #AD1D35;
 }
