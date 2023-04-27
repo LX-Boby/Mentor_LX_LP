@@ -44,22 +44,20 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo me-auto">
+            <a href="/" class="logo me-auto">
                 <img src="{{url_for('static', filename='img/logo/Take-you-the-next-Level-color.png')}}" alt=""
-                    class="img-fluid"></a>
+                    class="img-fluid">
+            </a>
 
             <!-- ======= Navbar ======= -->
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto {% if title=='Home' %} active {% endif %}" href="/">Home</a></li>
-                    <li><a class="nav-link scrollto {% if title=='About' %} active {% endif %}" href="/about">About
-                            Us</a></li>
-                    <li><a class="nav-link scrollto {% if title=='Mentors' %} active {% endif %}"
-                            href="/mentors">Mentor's Profile</a></li>
-                    <li><a class="nav-link scrollto {% if title=='Contact' %} active {% endif %}"
-                            href="/contact">Contact</a></li>
+                    <li><a class="nav-link scrollto {% if title=='About' %} active {% endif %}" href="/about">About Us</a></li>
+                    <li><a class="nav-link scrollto {% if title=='Mentors' %} active {% endif %}" href="/mentors">Mentor's Profile</a></li>
+                    <li><a class="nav-link scrollto {% if title=='Contact' %} active {% endif %}" href="/contact">Contact</a></li>
 
-                    <li><a class="getstarted scrollto" href="/auth">Login</a></li>
+                    <li><a class="main-button scrollto" href="/auth">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>

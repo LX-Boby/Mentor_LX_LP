@@ -43,9 +43,24 @@ def contact():
     return render_template('contact.html', title="Contact")
 
 
+@app.route('/send_feedback', methods=["POST"])
+def send_feedback():
+    return redirect('/contact')
+
+
 @app.route('/auth')
 def auth():
     return render_template('auth.html', title="Authentication")
+
+
+@app.route('/login', methods=["POST"])
+def login():
+    return redirect('/')
+
+
+@app.route('/register', methods=["POST"])
+def register():
+    return redirect('/')
 
 
 @app.route('/detail/<keyword>')
@@ -70,5 +85,4 @@ def delete_word():
     })
 
 
-if __name__ == '__main__':
-    app.run('0.0.0.0', port=5000, debug=True)
+if __name__ == '__main__':    app.run('0.0.0.0', port=5000, debug=True)
